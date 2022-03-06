@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JWT Decoder</title>
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/@alphardex/aqua.css@1.5.0/dist/aqua.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css'>
+  <link rel="stylesheet" href="./styles/buttons.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/json-formatter.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark-reasonable.min.css">
+
+
+</head>
+
+<body>
+
+  <div class="container flex flex-wrap justify-between">
+    <div class="dark-mode mx-8 my-4 bg-primary flex flex-col justify-between px-6 pb-12 pt-4rounded overflow-hidden">
+      
+      <div>
+        <h1 class="text-secondary-darkest  text-center ">JWT Decoder</h1>
+        <a style="text-decoration: none" target="_blank" href="http://github.com/PineAppleGrits/jwt-decoder">
+        <p class="text-secondary-darkest  text-center">
+          By Gino S.
+
+            <i class="fa-brands fa-github">
+
+            </i>
+          </p> 
+        </a>
+
+        <div class="input-group">
+          
+          <div class="btn btn-disabled btn-s">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <input type="text" id="jwt-input" class="form-control" placeholder="Input your JWT token">
+        </div>
+     
+
+        <li class="divider"></li>
+        <div id="error-message" class="hidden">
+          <div class="alert alert-simple alert-danger " role="alert">
+            <p>
+              <strong>Oh snap!</strong> Please check your JWT Token. Something went wrong.
+            </p>
+          </div>
+        </div>
+        <div id="output-container" class="hidden"
+          style="background: #282c34;  display: block;overflow-x: auto;padding: 1em;">
+          <div>
+            <button id="btn-formatted" type="button" class="btn-s btn-solid">Formatted</button>
+            <button id="btn-raw" type="button" class=" btn-s">Raw</button>
+            <button id="btn-header" type="button" class="btn btn-s btn-disabled">HEADER</button>
+
+          </div>
+          <pre id="pre-raw"><code id="raw-output" class="hidden language-json"></code></pre>
+          <pre><code id="formatted-output"><div></div></code></pre>
+        </div>
+        </li>
+      </div>
+    </div>
+  </div>
+
+  <script src="./scripts/main.js"></script>
+  <script src="./third-party/json-formatter.umd.js"></script>
+  <script src="./third-party/highlight.min.js"></script>
+</body>
+
+</html>

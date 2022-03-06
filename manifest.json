@@ -1,0 +1,19 @@
+{
+  "name": "JWT Decoder",
+  "version": "1.0.0",
+  "description": "Decode your JWT tokens quickly using this extension.",
+  "manifest_version": 3,
+  "author": "Gino S.",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "JWT Decoder"
+  },
+  "optional_permissions": [
+    "clipboardRead"
+  ],
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
