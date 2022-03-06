@@ -37,7 +37,6 @@ const jwtDecrypt = (e) => {
     catch (e) {
         outputContainer.classList.add('hidden')
         errorMessage.classList.remove('hidden');
-        console.error(e)
     }
 }
 events.forEach((e) => {
