@@ -1,7 +1,10 @@
-# <img src="https://jwt.io/img/pic_logo.svg"  height="45" />  <img src="https://jwt.io/img/logo.svg"  height="25" />  DECODER
- Decode your JWT  tokens quickly using this Chrome extension.
-
-
+<h1 align="center" ><img src="https://jwt.io/img/pic_logo.svg"  height="45" />  <img src="https://jwt.io/img/logo.svg"  height="25" />  DECODER</h1>
+ <em><p align="center">Decode your JWT  tokens quickly using this Chrome extension.</p></em>
+<p align="center">
+  <img src="https://img.shields.io/github/v/release/PineAppleGrits/jwt-decoder?style=for-the-badge" />
+  <img src="https://img.shields.io/codefactor/grade/github/PineAppleGrits/jwt-decoder/main?style=for-the-badge" />
+  <img src="https://img.shields.io/github/downloads/PineAppleGrits/jwt-decoder/latest/total?style=for-the-badge" />
+</p>
 
 **Input the JWT and get Formatted and Raw output**\
 Formatted:\
